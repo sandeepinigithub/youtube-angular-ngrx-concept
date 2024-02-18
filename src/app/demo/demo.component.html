@@ -1,0 +1,9 @@
+<div class="wrapper-demo">
+    <div class="demo-container">
+        <h1>Demo for ngrx</h1>
+        <select name="country" id="country" [(ngModel)]="countryId" (change)="countryChange()">
+            <option value="0">Select country</option>
+            <option [value]="country?.id" *ngFor="let country of countryList">{{country?.name}}</option>
+        </select>
+    </div>
+</div>
